@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <h1>List Project for Inovonics</h1>
+    <h2>Alejandro Perez</h2>
+    Hello! and welcome to the home page of this project.<br>
+    This is a simple list manager of integers (we can only manage integers).
+    Here are the different paths you can access and how to use them:
+    <br>
+    <br>
+    1.- /elements/<br>
+    This path display us the elements that we actually have in our list
+    <br>
+    <br>
+    2.- /element/add/beginning/{int}<br>
+    This path take an url parameter to insert an element at the beginning of the list (only integers or 404)<br>
+    <small>Example: /element/add/beginning/77</small>
+    <br>
+    <br>
+    3.- /element/add/end/{int}<br>
+    This path take an url parameter to insert an element at the end of the list (only integers or 404)<br>
+    <small>Example: /element/add/beginning/77</small>
+    <br>
+    <br>
+    3.- /element/add/end/{int}<br>
+    This path take a path parameter to insert an element at the end of the list<br>
+    <small>Example: /element/add/end/92</small>
+    <br>
+    <br>
+    4.- elements/add/before/{int:old_num}/{int:new_num}/<br>
+    This path take two url parameters:
+    <ul>
+        <li>old_num = The number in the list that we're using as a reference</li>
+        <li>new_num = The number that we want to insert before the referenced number</li>
+    </ul>
+    <br>
+    <small>Example: /element/add/before/876/23</small>
+    <br>
+    <br>
+    5.- elements/add/after/{int:old_num}/{int:new_num}/<br>
+    This path take two url parameters:
+    <ul>
+        <li>old_num = The number in the list that we're using as a reference</li>
+        <li>new_num = The number that we want to insert after the referenced number</li><br>
+    </ul>
+    <br>
+    <small>Example: /element/add/after/77/78</small>
+    <br>
+    <br>
+
+</body>
+</html>
