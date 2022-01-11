@@ -1,15 +1,30 @@
-# Inovonics_test
-This is a private repository for Inovonics recruitment process.
+# Inovonics test
+This is a private repository for Inovonics recruitment process made by Alejandro Pérez.
 
 # Run the project in local
--Create a venv
--Install the requirements
-`'pip install requirements.txt'`
--Start the Django server
-`'python3 manage.py runserver'`
--Validate code linter
-`'flake8'`
+1. Create a venv  
+2. Install the requirements  
+~~~
+pip install requirements.txt  
+~~~
+3. Start the Django server  
+~~~
+python3 manage.py runserver
+~~~  
+4. Use the home page url `localhost:8000/`  
+5. You will see the the home page with the paths we can use and how to use them:
+![home](https://user-images.githubusercontent.com/78990484/149033625-7abea25f-4797-4f1b-8c7a-a5a376c41e7d.png)
 
-#Run tests
-To run tests and coverage report just use the pytest command
-`'pytest'`
+
+# Validate code linter  
+In order to implement PEP8 in this project, it was used Flake8 library to check the code. You can check it too with the next command in the terminal:  
+~~~
+flake8
+~~~
+  
+# Run tests  
+To run tests and coverage report just use the django test command  
+~~~
+python3 manage.py test
+~~~  
+  
